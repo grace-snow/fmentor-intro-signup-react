@@ -4,13 +4,13 @@ import { siteData } from '../../data/site';
 
 function Footer({className}) {
   return (
-    <footer className={`wrapper center ${className}`}>
+    <footer className={`center ${className}`}>
       <p className='attribution'>
         Challenge by{" "}
-        <a href={siteData.challengeProviderUrl} target='_blank' rel="noopener" className='underline hover:text-brand-2 focus-visible:outline-brand-2 transition ease-out duration-500'>
+        <a href={siteData.challengeProviderUrl} target='_blank' rel="noopener" className='underline transition duration-500 ease-out hover:text-brand-2 focus-visible:outline-brand-2'>
           {siteData.challengeProvider}
         </a>
-        . Coded by <a href={siteData.authorUrl} target='_blank' rel='noopener' className='underline hover:text-brand-2 focus-visible:outline-brand-2 transition ease-out duration-500'>{siteData.author}</a>.
+        . Coded by <a href={siteData.authorUrl} target='_blank' rel='noopener' className='underline transition duration-500 ease-out hover:text-brand-2 focus-visible:outline-brand-2'>{siteData.author}</a>.
       </p>
     </footer>
   )

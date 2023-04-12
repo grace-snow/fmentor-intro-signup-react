@@ -30,10 +30,12 @@ function RegistrationForm({ onSubmit }) {
     },
   };
 
+  const inputClasses = `block w-full font-semibold tracking-wide bg-white bg-no-repeat border rounded-md py-15 ps-4 md:ps-8 pe-11 border-neutral-2 placeholder:text-sm placeholder:font-semibold placeholder:text-neutral-1-opaque focus-visible:border-brand-accent focus-visible:outline-brand-accent focus-visible:outline-1 focus-visible:outline aria-invalid:border-brand-1 aria-invalid:focus-visible:border-brand-1 aria-invalid:focus-visible:outline-brand-1 aria-invalid:bg-field-error bg-field-error-img`;
+
   return (
     <form
       action=''
-      className='bg-white text-neutral-1 rounded-md p-6 flex flex-col gap-y-[20px]'
+      className='bg-white text-neutral-1 rounded-md p-6 flex flex-col gap-y-[20px] shadow-card'
       /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
       onSubmit={handleSubmit(onSubmit)}
       noValidate>
@@ -43,7 +45,7 @@ function RegistrationForm({ onSubmit }) {
           <VisuallyHidden>First Name</VisuallyHidden>
         </label>
         <input
-          className='block w-full rounded-md bg-white py-15 ps-8 pe-4 border border-neutral-2 placeholder:text-sm focus-visible:border-brand-accent focus-visible:outline-brand-accent focus-visible:outline-1 focus-visible:outline aria-invalid:border-brand-1 aria-invalid:focus-visible:border-brand-1 aria-invalid:focus-visible:outline-brand-1 aria-invalid:bg-field-error bg-no-repeat bg-field-error-img'
+          className={inputClasses}
           required={true}
           type='text'
           id={`${id}-givenName`}
@@ -69,7 +71,7 @@ function RegistrationForm({ onSubmit }) {
           <VisuallyHidden>Last Name</VisuallyHidden>
         </label>
         <input
-          className='block w-full rounded-md bg-white py-15 ps-8 pe-4 border border-neutral-2 placeholder:text-sm focus-visible:border-brand-accent focus-visible:outline-brand-accent focus-visible:outline-1 focus-visible:outline aria-invalid:border-brand-1 aria-invalid:focus-visible:border-brand-1 aria-invalid:focus-visible:outline-brand-1 aria-invalid:bg-field-error bg-no-repeat bg-field-error-img'
+          className={inputClasses}
           required={true}
           type='text'
           id={`${id}-familyName`}
@@ -95,7 +97,7 @@ function RegistrationForm({ onSubmit }) {
           <VisuallyHidden>Email</VisuallyHidden>
         </label>
         <input
-          className='block w-full rounded-md bg-white py-15 ps-8 pe-4 border border-neutral-2 placeholder:text-sm focus-visible:border-brand-accent focus-visible:outline-brand-accent focus-visible:outline-1 focus-visible:outline aria-invalid:border-brand-1 aria-invalid:focus-visible:border-brand-1 aria-invalid:focus-visible:outline-brand-1 aria-invalid:bg-field-error bg-no-repeat bg-field-error-img'
+          className={inputClasses}
           required={true}
           type='email'
           id={`${id}-email`}
@@ -129,9 +131,9 @@ function RegistrationForm({ onSubmit }) {
           <VisuallyHidden>Password</VisuallyHidden>
         </label>
         <input
-          className='block w-full rounded-md bg-white py-15 ps-8 pe-4 border border-neutral-2 placeholder:text-sm focus-visible:border-brand-accent focus-visible:outline-brand-accent focus-visible:outline-1 focus-visible:outline aria-invalid:border-brand-1 aria-invalid:focus-visible:border-brand-1 aria-invalid:focus-visible:outline-brand-1 aria-invalid:bg-field-error bg-no-repeat bg-field-error-img'
+          className={inputClasses}
           required={true}
-          type='email'
+          type='password'
           id={`${id}-pw`}
           placeholder='Password'
           aria-describedby={`${id}-pw-err`}
@@ -166,13 +168,13 @@ function RegistrationForm({ onSubmit }) {
       <div className=''>
         <button
           type='submit'
-          className='bg-brand-2 text-white font-bold rounded-md shadow-inner-button hover:bg-brand-accent transition ease-out duration-500 block w-full p-[0.9375em] '
+          className='bg-brand-2-a11y text-white text-largeprint uppercase font-bold tracking-widest rounded-md shadow-inner-button hover:bg-brand-accent transition ease-out duration-500 block w-full py-[0.6em] px-[0.9375em] '
           aria-describedby={`${id}-terms`}>
           Claim your Free Trial
         </button>
-        <p id={`${id}-terms`} className='text-xs mt-3 text-center'>
+        <p id={`${id}-terms`} className='mt-3 text-xs leading-normal tracking-wide text-center text-neutral-2-a11y'>
           By clicking the button, you are agreeing to our{" "}
-          <a href='/' className='text-brand-1 hover:text-brand-accent transition ease-out duration-500 outline-offset-2 font-bold underline'>
+          <a href='/' className='font-bold underline transition duration-500 ease-out text-brand-1-a11y hover:text-brand-accent outline-offset-2'>
             Terms and Services
           </a>
         </p>
