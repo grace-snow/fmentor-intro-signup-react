@@ -1,0 +1,22 @@
+:root {
+  --brand-1: hsl(0, 100%, 74%);
+  --brand-2: hsl(154, 59%, 51%);
+  --brand-accent: hsl(248, 32%, 49%);
+  --neutral-1: hsl(249, 10%, 26%);
+  --neutral-2: hsl(246, 25%, 77%);
+  --font-family: "Poppins", system-ui, sans-serif;
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --page-max-width: 72.375rem;
+  --page-side-padding: min(5%, 1.5rem);
+}
+
+*:focus-visible {
+  outline: solid 2px var(--brand-accent);
+}
+
+a:focus-visible {
+  outline-offset: 0.25em;
+}
