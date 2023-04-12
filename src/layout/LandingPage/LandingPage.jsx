@@ -1,10 +1,9 @@
 import React from "react";
 
 import PageIntro from "../../components/PageIntro/PageIntro";
-import Banner from "../../components/banner/Banner";
-import Footer from "../../components/Footer.js/footer";
+import Banner from "../../components/Banner/Banner";
+import Footer from "../../components/Footer/Footer";
 import RegistrationForm from "../../components/RegistrationForm/RegistrationForm";
-import { set } from "react-hook-form";
 
 function LandingPage() {
   const [isRegistered, setIsRegistered] = React.useState(false);
@@ -21,7 +20,7 @@ function LandingPage() {
     setIsRegistered(true);
   };
 
-  console.log(values);
+  // console.log(values);
 
   return (
     <div
