@@ -16,6 +16,7 @@ export default {
       "neutral-1-opaque": "hsla(249, 10%, 26%, 0.7)",
       "neutral-2": "hsl(246, 25%, 77%)",
       "neutral-2-a11y": "hsl(242, 28%, 56%)",
+      grey: "hsla(0, 0%, 87%, 1)",
       white: "#fff",
     },
     fontFamily: {
