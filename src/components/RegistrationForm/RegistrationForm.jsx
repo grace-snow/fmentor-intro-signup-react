@@ -29,11 +29,9 @@ function RegistrationForm({ onSubmit }) {
     },
   };
 
-  const inputClasses = `block w-full font-semibold tracking-wide bg-white bg-no-repeat border rounded-md py-15 ps-4 md:ps-8 pe-11 border-grey placeholder:text-sm placeholder:font-semibold placeholder:text-neutral-1-opaque focus-visible:border-brand-accent focus-visible:outline-brand-accent focus-visible:outline-1 focus-visible:outline aria-invalid:border-brand-1 aria-invalid:focus-visible:border-brand-1 aria-invalid:focus-visible:outline-brand-1 aria-invalid:bg-field-error bg-field-error-img`;
-
   return (
     <form
-      action=''
+      action='POST'
       className='bg-white text-neutral-1 rounded-md p-6 flex flex-col gap-y-[20px] shadow-card'
       /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
       onSubmit={handleSubmit(onSubmit)}

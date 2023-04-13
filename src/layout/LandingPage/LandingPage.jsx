@@ -47,7 +47,8 @@ function LandingPage() {
             </Banner>
             {isRegistered ? (
               <RegistrationFormThanks>
-                <p className='text-md'>Thanks for signing up!</p>
+                <h2 className='text-2xl font-bold tracking-wide'><strong className='text-brand-accent'>Thanks</strong> for signing up!</h2>
+                <p className='text-md'>Please check your email to confirm your registration.</p>
               </RegistrationFormThanks>
             ) : (
               <RegistrationForm onSubmit={onSubmit} />
