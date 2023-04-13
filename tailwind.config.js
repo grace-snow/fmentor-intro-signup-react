@@ -45,9 +45,6 @@ export default {
       backgroundPosition: {
         "field-error-img": "right 1em center",
       },
-      backgroundColor: {
-        "opaque-dark": "hsla(246, 10%, 20%, 0.5)",
-      },
       boxShadow: {
         "inner-button": "inset 0px -4px 0px rgba(0, 0, 0, 0.0908818)",
         card: "0px 8px 0px rgba(0, 0, 0, 0.14688)",
@@ -69,7 +66,8 @@ export default {
       },
       maxWidth: {
         heading: "15ch",
-        md: "32rem",
+        md: "28rem",
+        "md-ch": "46ch",
       },
       spacing: {
         15: "0.9375em",

@@ -167,7 +167,7 @@ function RegistrationForm({ onSubmit }) {
       <div className=''>
         <button
           type='submit'
-          className='bg-brand-2-a11y text-white text-largeprint uppercase font-bold tracking-widest rounded-md shadow-inner-button hover:bg-brand-accent transition ease-out duration-500 block w-full py-[0.6em] px-[0.9375em] '
+          className='bg-brand-2-a11y text-white text-largeprint uppercase font-bold tracking-widest leading-[1.2] rounded-md shadow-inner-button hover:bg-brand-accent transition ease-out duration-500 block w-full py-[0.8em] px-[0.9375em] '
           aria-describedby={`${id}-terms`}>
           Claim your Free Trial
         </button>
