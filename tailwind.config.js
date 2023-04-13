@@ -67,7 +67,7 @@ export default {
       maxWidth: {
         heading: "15ch",
         md: "28rem",
-        "md-ch": "46ch",
+        "md-ch": "48ch",
       },
       spacing: {
         15: "0.9375em",
