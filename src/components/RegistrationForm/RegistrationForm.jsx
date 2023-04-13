@@ -32,7 +32,7 @@ function RegistrationForm({ onSubmit }) {
   return (
     <form
       action='POST'
-      className='bg-white text-neutral-1 rounded-md p-6 flex flex-col gap-y-[20px] shadow-card'
+      className='bg-white text-neutral-1 rounded-md p-6 md:p-10 flex flex-col gap-y-[20px] shadow-card'
       /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
       onSubmit={handleSubmit(onSubmit)}
       noValidate>
