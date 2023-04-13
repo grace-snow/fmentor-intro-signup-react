@@ -32,7 +32,7 @@ function LandingPage() {
         <div className='grid items-center w-full max-w-[70rem] p-4 md:px-8 py-10 mx-auto md:grid-cols-2 gap-x-12 gap-y-16'>
           <PageIntro
             className={
-              "text-white bg-neutral-1 text-center md:text-left rounded-md p-6 mx-auto md:mx-0 max-w-md-ch shadow-card"
+              "text-white bg-neutral-1 text-center md:text-left rounded-lg p-6 mx-auto md:mx-0 max-w-md-ch shadow-card"
             }>
             <PageIntroHeading>Learn to code by watching others</PageIntroHeading>
             <p className='max-w-md mx-auto mt-8 font-medium md:mx-0'>
@@ -40,7 +40,7 @@ function LandingPage() {
             </p>
           </PageIntro>
           <div className='grid gap-6'>
-            <Banner className='font-normal text-white bg-brand-accent shadow-card'>
+            <Banner className='w-full max-w-screen-sm mx-auto font-normal text-white bg-brand-accent shadow-card md:me-0'>
               <p>
                 <strong className='font-bold'>Try free for 7 days</strong> then  $20/mo. thereafter
               </p>
